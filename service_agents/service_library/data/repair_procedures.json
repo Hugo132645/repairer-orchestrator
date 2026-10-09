@@ -1,0 +1,46 @@
+[
+  {
+    "procedure_id": "SYN-EU-CH-P0301-001",
+    "title": "Synthetic P0301 inspection sequence",
+    "vehicle_model": "Demo Compact Hatchback",
+    "market": "EU",
+    "fault_codes": [
+      "P0301"
+    ],
+    "scope": "demonstration_only",
+    "steps": [
+      "Confirm the synthetic fault code is present.",
+      "Inspect the synthetic ignition-coil electrical connection.",
+      "Inspect the synthetic spark-plug condition and connection.",
+      "Review the synthetic injector connection.",
+      "Record observations without authorizing component replacement."
+    ],
+    "limitations": [
+      "Not a real manufacturer procedure.",
+      "Not complete or safety-authorizing.",
+      "Requires verification by a qualified professional."
+    ]
+  },
+  {
+    "procedure_id": "SYN-EU-LCV-P0420-001",
+    "title": "Synthetic P0420 inspection sequence",
+    "vehicle_model": "Demo Light Commercial Van",
+    "market": "EU",
+    "fault_codes": [
+      "P0420"
+    ],
+    "scope": "demonstration_only",
+    "steps": [
+      "Confirm the synthetic fault code is present.",
+      "Check the synthetic exhaust path for visible leakage indications.",
+      "Review synthetic upstream and downstream sensor patterns.",
+      "Check whether synthetic misfire codes remain unresolved.",
+      "Record observations without authorizing component replacement."
+    ],
+    "limitations": [
+      "Not a real manufacturer procedure.",
+      "Not complete or safety-authorizing.",
+      "Requires verification by a qualified professional."
+    ]
+  }
+]

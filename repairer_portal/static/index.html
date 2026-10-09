@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Repairer Desk — Synthetic Prototype</title>
+  <link rel="stylesheet" href="/static/styles.css?v=20260730-4">
+  <link rel="stylesheet" href="/static/themes/tech.css?v=20260731-1">
+</head>
+<body class="theme-tech">
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to classic theme" title="Switch to classic theme">C</button>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main id="login-view" class="login-shell">
+    <section class="brand-panel">
+      <div class="brand-mark">RD</div>
+      <p class="eyebrow" data-i18n="operations_workspace">Repair operations workspace</p>
+      <h1><span data-i18n="clear_answers">Clear answers.</span><br><span data-i18n="connected_expertise">Connected expertise.</span></h1>
+      <p class="brand-copy" data-i18n="brand_copy">A multi-brand aftersales workspace connecting diagnostics, technical procedures, and parts availability.</p>
+      <div class="signal-row"><span></span> <b data-i18n="local_environment">Local prototype environment</b></div>
+    </section>
+    <section class="login-card">
+      <p class="eyebrow" data-i18n="secure_access">Secure access</p>
+      <h2 data-i18n="welcome_back">Welcome back</h2>
+      <p class="muted" data-i18n="sign_in_copy">Sign in to open your repair desk.</p>
+      <form id="login-form">
+        <label><span data-i18n="username">Username</span><input id="username" autocomplete="username" value="demo.repairer" required></label>
+        <label><span data-i18n="password">Password</span><input id="password" type="password" autocomplete="current-password" value="Synthetic123!" required></label>
+        <label><span data-i18n="language">Language</span>
+          <select id="login-language">
+            <option value="en">English</option>
+            <option value="it">Italiano</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="pl">Polski</option>
+            <option value="pt">Português</option>
+          </select>
+        </label>
+        <p id="login-error" class="error" role="alert"></p>
+        <button type="submit"><span class="button-label" data-i18n="enter_workspace">Enter workspace</span> <span>→</span></button>
+      </form>
+      <div class="demo-note"><strong data-i18n="prototype_credentials">Prototype credentials</strong><br>User: demo.repairer / Synthetic123!<br>Administrator: demo.admin / AdminSynthetic123!</div>
+    </section>
+  </main>
+
+  <main id="portal-view" class="portal hidden">
+    <aside>
+      <div class="logo"><span>RD</span><div>Repairer Desk<small data-i18n="synthetic_prototype">Synthetic prototype</small></div></div>
+      <nav>
+        <button class="nav-active" data-view="assistant"><span>✦</span> <b data-i18n="assistant">Assistant</b></button>
+        <button data-view="repair-orders"><span>◫</span> <b data-i18n="repair_orders">Repair orders</b></button>
+        <button data-view="service-history"><span>⌁</span> <b data-i18n="service_history">Service history</b></button>
+        <button id="admin-nav" class="hidden" data-view="administration"><span>⚙</span> <b>Administration</b></button>
+      </nav>
+      <div class="services">
+        <p class="eyebrow"><span data-i18n="connected_services">Connected services</span> <button id="refresh-health" type="button" aria-label="Refresh service health">↻</button></p>
+        <div data-service="diagnostics_agent"><i class="health-checking"></i><span data-i18n="diagnostics">Diagnostics</span><small>Checking…</small></div>
+        <div data-service="service_library_agent"><i class="health-checking"></i><span data-i18n="service_library">Service library</span><small>Checking…</small></div>
+        <div data-service="parts_agent"><i class="health-checking"></i><span data-i18n="parts_inventory">Parts inventory</span><small>Checking…</small></div>
+      </div>
+      <button class="logout" data-logout data-i18n="log_out">Log out</button>
+    </aside>
+    <section class="workspace">
+      <header>
+        <div><p id="view-eyebrow" class="eyebrow">AI repair assistant</p><h2 id="view-title">How can I help today?</h2></div>
+        <div class="header-actions">
+          <button id="new-session" class="new-session" type="button"><span>＋</span> New conversation</button>
+          <div class="user"><span>DR</span><div id="current-user">demo.repairer<small data-i18n="demo_repairer">Demo repairer</small></div></div>
+          <label class="language-control"><span data-i18n="language">Language</span>
+            <select id="portal-language">
+              <option value="en">English</option>
+              <option value="it">Italiano</option>
+              <option value="de">Deutsch</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+              <option value="pl">Polski</option>
+              <option value="pt">Português</option>
+            </select>
+          </label>
+          <button class="header-logout" data-logout type="button">Log out</button>
+        </div>
+      </header>
+      <div id="messages" class="messages">
+        <article id="welcome-message" class="message assistant">
+          <div class="avatar">✦</div>
+          <div><p class="speaker" data-i18n="assistant_name">Workshop Assistant</p><div class="bubble" data-i18n="welcome_message">Hello. I can coordinate synthetic diagnostics, technical procedures, and parts availability. Provide the vehicle model, market, diagnostic trouble code, and requested workshop task.</div></div>
+        </article>
+        <div class="suggestions">
+          <button data-i18n="suggestion_diagnostic">Assess P0301 for Demo Compact Hatchback in the EU</button>
+          <button data-i18n="suggestion_procedure">Find a procedure and ignition coil availability</button>
+        </div>
+      </div>
+      <div id="repair-orders-view" class="records-view hidden"></div>
+      <div id="service-history-view" class="records-view hidden"></div>
+      <div id="administration-view" class="records-view hidden"></div>
+      <form id="chat-form" class="composer">
+        <textarea id="message-input" rows="1" maxlength="4000" placeholder="Describe the repair request…" required></textarea>
+        <button type="submit" aria-label="Send message">↑</button>
+        <small>All responses are synthetic demonstration content, not repair authorization.</small>
+      </form>
+    </section>
+  </main>
+  <dialog id="new-session-dialog" class="confirm-dialog">
+    <form method="dialog">
+      <div class="dialog-icon">＋</div>
+      <h2>Start a new conversation?</h2>
+      <p>The current conversation will be cleared from this prototype session. This cannot be undone.</p>
+      <div class="dialog-actions">
+        <button value="cancel" class="dialog-cancel">Keep conversation</button>
+        <button id="confirm-new-session" value="confirm" class="dialog-confirm">Start new conversation</button>
+      </div>
+    </form>
+  </dialog>
+  <script src="/static/app.js?v=20260731-3"></script>
+</body>
+</html>

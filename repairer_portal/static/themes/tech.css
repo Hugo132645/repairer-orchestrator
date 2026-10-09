@@ -1,0 +1,66 @@
+body.theme-tech{--ink:#eef2ff;--muted:#929dbd;--cream:#050713;--paper:#070a16;--green:#4e7dff;--lime:#64e5ff;--line:rgba(137,161,255,.18);color:#eef2ff;background:radial-gradient(circle at 12% 8%,rgba(67,96,255,.2),transparent 28%),radial-gradient(circle at 88% 12%,rgba(157,74,255,.2),transparent 30%),linear-gradient(145deg,#04060f,#080b18 48%,#09051a)}
+body.theme-tech::before,body.theme-tech::after{content:"";position:fixed;z-index:0;pointer-events:none;width:70vw;height:38vw;min-width:700px;min-height:360px;border:1px solid rgba(98,148,255,.18);border-radius:45% 55% 63% 37%/58% 42% 58% 42%;animation:tech-wave 18s ease-in-out infinite alternate}
+body.theme-tech::before{top:-24vw;left:-12vw;background:linear-gradient(120deg,rgba(50,112,255,.08),rgba(119,72,255,.04))}
+body.theme-tech::after{right:-20vw;bottom:-28vw;background:linear-gradient(120deg,rgba(104,68,255,.07),rgba(38,191,255,.05));animation-delay:-8s}
+@keyframes tech-wave{from{transform:rotate(-5deg) scale(1)}to{transform:rotate(6deg) translate(3vw,2vw) scale(1.08)}}
+.theme-tech .ambient{opacity:.4;filter:blur(70px)}.theme-tech .ambient-one{background:#3d55ff}.theme-tech .ambient-two{background:#8e3cff}
+.theme-tech .login-shell,.theme-tech .messages{background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:42px 42px}
+.theme-tech .brand-mark,.theme-tech .logo>span{background:linear-gradient(135deg,#4ea1ff,#9b6cff);color:white;box-shadow:0 0 32px rgba(86,105,255,.35)}
+.theme-tech .eyebrow{color:#8fb6ff}.theme-tech .brand-panel h1,.theme-tech .login-card h2,.theme-tech header h2{color:white}.theme-tech .brand-copy,.theme-tech .muted{color:#929dbd}
+.theme-tech .signal-row span{background:#55e6ff;box-shadow:0 0 0 5px rgba(85,230,255,.09),0 0 18px rgba(85,230,255,.5)}
+.theme-tech .login-card{position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(18,26,51,.94),rgba(9,13,29,.9));border-color:rgba(133,154,255,.22);box-shadow:0 30px 90px rgba(0,0,0,.42),inset 0 1px rgba(255,255,255,.05)}
+.theme-tech input,.theme-tech select,.theme-tech textarea{color:#eef2ff;background:rgba(4,8,20,.74);border-color:rgba(137,161,255,.18)}
+.theme-tech input:focus,.theme-tech textarea:focus,.theme-tech select:focus{border-color:#4ea1ff;box-shadow:0 0 0 3px rgba(78,161,255,.13),0 0 24px rgba(78,161,255,.08)}
+.theme-tech .login-card button,.theme-tech .composer>button,.theme-tech .admin-search-form button,.theme-tech .admin-conversation-result>button{background:linear-gradient(135deg,#347dff,#8958ff);box-shadow:0 10px 28px rgba(76,85,255,.28)}
+.theme-tech .demo-note{color:#b4c4e8;background:rgba(67,94,168,.12);border:1px solid rgba(132,157,255,.13)}
+.theme-tech .portal{background:radial-gradient(circle at 78% 3%,rgba(98,71,255,.12),transparent 30%),#050713}
+.theme-tech aside{background:linear-gradient(180deg,rgba(9,14,32,.99),rgba(8,10,24,.99));border-right:1px solid rgba(137,161,255,.18);box-shadow:20px 0 70px rgba(0,0,0,.22)}
+.theme-tech .logo{color:white}.theme-tech nav button,.theme-tech .logout{color:#93a0c4}
+.theme-tech .nav-active{color:white!important;background:linear-gradient(90deg,rgba(55,116,255,.24),rgba(139,75,255,.2))!important;border:1px solid rgba(114,140,255,.18);box-shadow:inset 3px 0 #4ea1ff}
+.theme-tech .services{border-color:rgba(137,161,255,.18)}.theme-tech .services .eyebrow{color:#8191bc}.theme-tech .services i.health-available{background:#62e6b1;box-shadow:0 0 10px rgba(98,230,177,.55)}
+.theme-tech .workspace{background:transparent}.theme-tech header{background:rgba(5,8,19,.7);border-color:rgba(137,161,255,.18);backdrop-filter:blur(22px)}
+.theme-tech .new-session,.theme-tech .header-logout{color:#c5d3ff;background:rgba(25,35,67,.62);border-color:rgba(137,161,255,.18)}
+.theme-tech .new-session:hover,.theme-tech .header-logout:hover{background:rgba(53,74,140,.45)}
+.theme-tech .user>span{color:white;background:linear-gradient(135deg,rgba(53,137,255,.32),rgba(145,77,255,.38));border:1px solid rgba(133,160,255,.2)}
+.theme-tech .speaker{color:#8ca0cd}.theme-tech .bubble{color:#dce5ff;background:linear-gradient(145deg,rgba(22,31,58,.95),rgba(13,20,40,.92));border:1px solid rgba(137,161,255,.18);box-shadow:0 16px 45px rgba(0,0,0,.18)}
+.theme-tech .user .bubble{color:white;background:linear-gradient(135deg,#225fc7,#6841c6);border-color:rgba(164,182,255,.24)}
+.theme-tech .bubble h2,.theme-tech .bubble h3,.theme-tech .bubble h4,.theme-tech .bubble strong{color:#f4f6ff}.theme-tech .bubble code{color:#b9eaff;background:rgba(69,121,187,.22)}
+.theme-tech .suggestions button{color:#afbee5;background:rgba(13,20,40,.78);border-color:rgba(137,161,255,.18)}.theme-tech .suggestions button:hover{color:white;border-color:rgba(100,151,255,.45)}
+.theme-tech .composer{background:rgba(12,18,36,.9);border-color:rgba(122,146,255,.22);box-shadow:0 20px 60px rgba(0,0,0,.32),0 0 40px rgba(82,73,255,.06);backdrop-filter:blur(20px)}.theme-tech .composer small{color:#7581a5}
+.theme-tech .request-panel,.theme-tech .record-card,.theme-tech .empty-state,.theme-tech .admin-conversation-search,.theme-tech .admin-conversation-result{color:#eef2ff;background:linear-gradient(145deg,rgba(18,27,53,.9),rgba(10,16,33,.9));border-color:rgba(137,161,255,.18);box-shadow:0 18px 55px rgba(0,0,0,.2)}
+.theme-tech .request-panel-header strong,.theme-tech .record-header strong,.theme-tech .record-card summary,.theme-tech .admin-section h3,.theme-tech .admin-users-title,.theme-tech .admin-chart h3,.theme-tech .admin-conversation-search h3{color:#cbd8ff}
+.theme-tech .request-panel-header span,.theme-tech .request-fields>div,.theme-tech .admin-stat-row div,.theme-tech .admin-list div,.theme-tech .record-response,.theme-tech .admin-conversation-detail>div{color:#cbd5f0;background:rgba(7,12,27,.62)}
+.theme-tech .workflow-step{border-color:rgba(137,161,255,.18);background:rgba(8,13,29,.42)}.theme-tech .records-view{background:transparent}
+.theme-tech .record-status{color:#b5f2dc;background:rgba(67,198,152,.12)}.theme-tech .record-card details,.theme-tech .admin-conversation-detail{border-color:rgba(137,161,255,.18)}
+.theme-tech .admin-metric{background:radial-gradient(circle at 100% 0,rgba(124,83,255,.26),transparent 48%),linear-gradient(145deg,rgba(22,35,69,.96),rgba(10,16,35,.96));border:1px solid rgba(137,161,255,.18);box-shadow:0 18px 46px rgba(0,0,0,.24),inset 0 1px rgba(255,255,255,.04)}
+.theme-tech .admin-metric span{color:#91a4d1}.theme-tech .admin-metric strong{color:white}.theme-tech .chart-grid{stroke:rgba(145,163,220,.12)}.theme-tech .chart-tokens{stroke:#55e6ff;filter:drop-shadow(0 0 6px rgba(85,230,255,.32))}.theme-tech .chart-cost{stroke:#9b6cff;filter:drop-shadow(0 0 6px rgba(155,108,255,.4))}
+.theme-tech .legend-tokens{background:#55e6ff}.theme-tech .legend-cost{background:#9b6cff}.theme-tech .admin-cost-notice{color:#9ca9ca;background:rgba(38,48,80,.38);border:1px solid rgba(137,161,255,.18)}
+.theme-tech .admin-conversation-result>p,.theme-tech .record-card>p{color:#aab5d2}
+.theme-tech .confirm-dialog{color:#eef2ff;background:#10172d;border:1px solid rgba(137,161,255,.18)}.theme-tech .confirm-dialog::backdrop{background:rgba(1,3,10,.78)}.theme-tech .dialog-cancel{color:#bdc8e8;background:#141d38;border-color:rgba(137,161,255,.18)}.theme-tech .dialog-confirm{background:linear-gradient(135deg,#347dff,#8958ff);border:0}
+.theme-toggle{position:fixed;z-index:10000;right:18px;bottom:18px;width:46px;height:46px;padding:0;border:2px solid rgba(190,207,255,.72);border-radius:50%;color:white;background:linear-gradient(135deg,#1e66dc,#7d45dc);box-shadow:0 12px 35px rgba(0,0,0,.38),0 0 24px rgba(92,111,255,.2);cursor:pointer;font:800 17px Inter,ui-sans-serif,system-ui,sans-serif}
+body:not(.theme-tech) .theme-toggle{color:white;background:#164b3b;border-color:#2f6b58;box-shadow:0 10px 28px rgba(22,75,59,.28)}
+body:not(.theme-tech) .theme-toggle:hover{background:#21634f;transform:translateY(-2px)}
+@media(max-width:800px){.theme-toggle{right:12px;bottom:12px;width:42px;height:42px;font-size:15px}}
+
+/* Live light effects are deliberately scoped to the technology theme. */
+.theme-tech .login-card,.theme-tech .admin-metric{position:relative;isolation:isolate;overflow:hidden}
+.theme-tech .login-card::before,.theme-tech .admin-metric::before{content:"";position:absolute;z-index:0;inset:-80% -45%;pointer-events:none;background:linear-gradient(108deg,transparent 39%,rgba(93,207,255,.035) 45%,rgba(171,119,255,.11) 50%,rgba(255,255,255,.055) 54%,transparent 61%);transform:translateX(-55%) rotate(4deg);animation:panel-shine 11s ease-in-out infinite}
+.theme-tech .admin-metric::before{animation-delay:-5s}
+.theme-tech .login-card::after,.theme-tech .admin-metric::after{content:"";position:absolute;z-index:0;pointer-events:none;width:170px;height:170px;right:-90px;top:-105px;border-radius:50%;background:radial-gradient(circle,rgba(90,179,255,.16),rgba(131,72,255,.06) 46%,transparent 70%);filter:blur(8px);animation:light-breathe 7s ease-in-out infinite alternate}
+.theme-tech .login-card>* ,.theme-tech .admin-metric>*{position:relative;z-index:1}
+.theme-tech .workspace::before{content:"";position:fixed;z-index:-1;pointer-events:none;left:18%;right:-10%;top:8%;height:52%;opacity:.48;background:radial-gradient(ellipse at 20% 45%,rgba(51,137,255,.13),transparent 42%),radial-gradient(ellipse at 70% 48%,rgba(139,71,255,.12),transparent 45%);filter:blur(30px);transform:translate3d(0,0,0);animation:workspace-light-wave 15s ease-in-out infinite alternate}
+.theme-tech .login-card button,.theme-tech .admin-search-form button,.theme-tech .admin-conversation-result>button{position:relative;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
+.theme-toggle{overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
+.theme-tech .composer>button{position:absolute;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
+.theme-tech .login-card button::before,.theme-tech .composer>button::before,.theme-tech .admin-search-form button::before,.theme-tech .admin-conversation-result>button::before{content:"";position:absolute;inset:-70% auto -70% -65%;width:42%;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(255,255,255,.48),transparent);transform:skewX(-18deg);transition:left .62s ease}
+.theme-tech .login-card button:hover,.theme-tech .composer>button:hover,.theme-tech .admin-search-form button:hover,.theme-tech .admin-conversation-result>button:hover,.theme-toggle:hover{transform:translateY(-2px);filter:saturate(1.12);box-shadow:0 14px 36px rgba(69,94,255,.4),0 0 24px rgba(91,209,255,.12)}
+.theme-tech .login-card button:hover::before,.theme-tech .composer>button:hover::before,.theme-tech .admin-search-form button:hover::before,.theme-tech .admin-conversation-result>button:hover::before{left:125%}
+.theme-tech .process-trace{color:#aebbdc;background:rgba(10,16,33,.9);border-color:rgba(137,161,255,.18)}
+.theme-tech .process-trace summary{color:#cbd8ff}
+.theme-tech .process-trace li{color:#9eabc9}
+.theme-tech .nav-active,.theme-tech .services i.health-available,.theme-tech .avatar{animation:soft-signal 4.5s ease-in-out infinite}
+@keyframes panel-shine{0%,20%{transform:translateX(-58%) rotate(4deg)}68%,100%{transform:translateX(58%) rotate(4deg)}}
+@keyframes light-breathe{from{opacity:.42;transform:scale(.88)}to{opacity:1;transform:scale(1.18)}}
+@keyframes workspace-light-wave{from{transform:translate3d(-5%,0,0) scale(.96)}to{transform:translate3d(7%,5%,0) scale(1.08)}}
+@keyframes soft-signal{0%,100%{filter:brightness(1);box-shadow:0 0 0 rgba(91,205,255,0)}50%{filter:brightness(1.12);box-shadow:0 0 24px rgba(91,205,255,.13)}}
+@media(prefers-reduced-motion:reduce){body.theme-tech::before,body.theme-tech::after,.theme-tech .workspace::before,.theme-tech .login-card::before,.theme-tech .admin-metric::before,.theme-tech .login-card::after,.theme-tech .admin-metric::after,.theme-tech .nav-active,.theme-tech .services i.health-available,.theme-tech .avatar{animation:none}.theme-tech .login-card button,.theme-tech .composer>button,.theme-tech .admin-search-form button,.theme-tech .admin-conversation-result>button,.theme-tech .theme-toggle{transition:none}}

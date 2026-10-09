@@ -1,0 +1,26 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Runtime output
+logs/*.jsonl
+logs/*.log
+data/*.db
+data/*.db-*
+
+# Editors and OS
+.vscode/*.local.json
+.idea/
+.DS_Store
+Thumbs.db

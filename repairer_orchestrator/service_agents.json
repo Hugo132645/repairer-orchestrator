@@ -1,0 +1,42 @@
+[
+  {
+    "name": "diagnostics_agent",
+    "description": "Interprets synthetic diagnostic trouble codes and proposes non-conclusive checks.",
+    "base_url": "http://127.0.0.1:8004/a2a/diagnostics_agent",
+    "enabled": true,
+    "protocols": ["a2a", "mcp"],
+    "preferred_protocol": "a2a",
+    "mcp_url": "http://127.0.0.1:8004/mcp",
+    "mcp_tool": "diagnostics_agent",
+    "capabilities": [
+      "fault_code_interpretation",
+      "diagnostic_checks"
+    ]
+  },
+  {
+    "name": "service_library_agent",
+    "description": "Finds synthetic repair procedures by vehicle model, fault code, and market.",
+    "base_url": "http://127.0.0.1:8004/a2a/service_library_agent",
+    "enabled": true,
+    "protocols": ["a2a", "mcp"],
+    "preferred_protocol": "mcp",
+    "mcp_url": "http://127.0.0.1:8004/mcp",
+    "mcp_tool": "service_library_agent",
+    "capabilities": [
+      "repair_procedure_search"
+    ]
+  },
+  {
+    "name": "parts_agent",
+    "description": "Checks a synthetic local parts catalogue for availability.",
+    "base_url": "http://127.0.0.1:8004/a2a/parts_agent",
+    "enabled": true,
+    "protocols": ["a2a", "mcp"],
+    "preferred_protocol": "mcp",
+    "mcp_url": "http://127.0.0.1:8004/mcp",
+    "mcp_tool": "parts_agent",
+    "capabilities": [
+      "parts_availability"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "duplicate_agent",
+    "description": "A sufficiently long synthetic service description.",
+    "base_url": "http://127.0.0.1:9001",
+    "enabled": true,
+    "capabilities": []
+  },
+  {
+    "name": "duplicate_agent",
+    "description": "Another sufficiently long synthetic service description.",
+    "base_url": "http://127.0.0.1:9002",
+    "enabled": true,
+    "capabilities": []
+  }
+]

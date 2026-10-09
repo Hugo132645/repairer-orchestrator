@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repairer-orchestrator-prototype"
+version = "0.3.0"
+description = "Synthetic local A2A repairer orchestrator prototype"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "langgraph>=1.0,<2",
+  "a2a-sdk[http-server]>=0.3.26,<0.4",
+  "mcp>=1.28,<2",
+  "litellm==1.82.6",
+  "python-dotenv>=1,<2",
+  "pydantic>=2.12,<3",
+  "httpx>=0.27,<1",
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.34,<1",
+  "opentelemetry-instrumentation-asgi>=0.57b0,<1",
+  "opentelemetry-instrumentation-httpx>=0.57b0,<1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "pytest-asyncio>=0.25,<2",
+  "ruff>=0.12,<1"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agent_gateway*", "common*", "repairer_orchestrator*", "repairer_portal*", "service_agents*"]
+exclude = ["logs*", "scripts*", "tests*"]
+
+[tool.setuptools.package-data]
+"service_agents.service_library" = ["data/*.json"]
+"repairer_portal" = ["static/*", "static/themes/*.css", "static/themes/classic/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
