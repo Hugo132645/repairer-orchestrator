@@ -1,5 +1,12 @@
 # Repairer Orchestrator
 
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-1C3C3C)](https://github.com/langchain-ai/langgraph)
+[![Protocols](https://img.shields.io/badge/Protocols-A2A%20%7C%20MCP-6F42C1)](#architecture)
+[![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?logo=windows11&logoColor=white)](SETUP_WINDOWS.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A local, synthetic reference implementation of a repair-domain multi-agent
 system. The project demonstrates how a central LangGraph orchestrator can
 validate a request, route work through an A2A/MCP gateway, combine structured
@@ -167,3 +174,7 @@ This repository is intended for local learning, architecture exploration, and
 demonstration. It requires additional identity, transport security, secret
 management, observability, resilience, data governance, and safety review
 before it could be considered for a shared environment.
+
+## License
+
+Released under the [MIT License](LICENSE).
